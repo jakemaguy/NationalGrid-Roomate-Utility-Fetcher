@@ -41,6 +41,7 @@ def get_gas_bill_amount():
     driver.switch_to.frame('_sweview')
     amount_due = driver.find_element_by_xpath('//*[@id="s_4_1_15_0"]')
     amount_due = float(amount_due.text.strip('$'))
+    driver.close()
     return amount_due
 
 def calculate_expected_payment():
