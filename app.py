@@ -67,16 +67,6 @@ if __name__ == "__main__":
     gas_bill = get_gas_bill_amount()
     expected_amount = calculate_expected_payment()
     final_payment = expected_amount - comcast_bill_amount
-#     print(
-#         '''
-# Electric Bill: ${:.2f} / 2   =   ${:.2f}
-# Gas Bill:      ${:.2f} / 2   =   ${:.2f}
-#                                - ${} (comcast bill)
-# --------------------------------------------------------------
-# Amount Due:      ${:.2f}
-#         '''.format(electric_bill, electric_bill/2.0,gas_bill, gas_bill/2.0,\
-#                    comcast_bill_amount, final_payment)
-#     )
 
     table_data = [
         ['Electric Bill:', '${:.2f} / 2'.format(electric_bill), '${:.2f}'.format(electric_bill/2.0)],
