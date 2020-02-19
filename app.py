@@ -1,15 +1,10 @@
 #!/usr/bin/env python3
 import argparse
-import time
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from bs4 import BeautifulSoup
 
 comcast_bill_amount = 30
-
-def sleep(seconds):
-    print("sleeping for {} seconds".format(seconds))
-    time.sleep(seconds)
 
 def get_electric_bill_amount():
     driver = webdriver.Chrome(options=options)
